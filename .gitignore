@@ -1,0 +1,15 @@
+Core/Demo.Data/bin/
+packages/
+Web/WebApi.OutputCache.V2/bin/
+Web/WebApi.OutputCache.V2/obj/
+Web/WebApi.OutputCache.Core/bin/
+Web/Demo.Web/obj/
+Web/Demo.Web/bin/
+Core/Demo.Business/bin/
+Core/Demo.Business/obj/
+Core/Demo.Data/obj/
+Core/Demo.DomainModel/obj/
+Core/Demo.Shared/obj/
+Core/Demo.Shared/bin/
+Core/Demo.ViewModel/bin/
+Core/Demo.ViewModel/obj/

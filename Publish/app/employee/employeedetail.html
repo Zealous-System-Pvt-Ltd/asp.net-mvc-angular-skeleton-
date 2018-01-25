@@ -1,0 +1,88 @@
+﻿<section class="mainbar" data-ng-controller="employeedetail as vm">
+    <section class="matter">
+        <div class="container-fluid">
+            <div>
+                <form name="empForm" novalidate>
+                    <button class="btn btn-info"
+                            data-ng-click="vm.goBack()">
+                        <i class="icon-hand-left"></i>Back
+                    </button>
+                    <button class="btn btn-info" type="submit"
+                            data-ng-click="vm.save()" ng-disabled="empForm.$invalid || !empForm.$dirty">
+                        <i class="icon-save"></i>Save
+                    </button>
+
+                    <div class="widget wgreen">
+                        <div data-cc-widget-header title="Edit {{vm.employee.FirstName || 'New Employee'}}"></div>
+                        <div>
+                            <div class="row">
+                                <label class="col-md-2">First Name</label>
+                                <input data-ng-model="vm.employee.FirstName" placeholder="First Name" data-ng-required="true" name="firstname" />
+                                <div class="messages" ng-messages="empForm.firstname.$error" ng-if="empForm.firstname.$touched || empForm.$submitted">
+                                    <div class="errorMessage" ng-message="required">First name is required.</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-md-2">Last Name</label>
+                                <input data-ng-model="vm.employee.LastName" placeholder="Last Name" data-ng-required="true" name="lastname" />
+                                <div class="messages" ng-messages="empForm.lastname.$error" ng-if="empForm.lastname.$touched || empForm.$submitted">
+                                    <div class="errorMessage" ng-message="required">Last name is required.</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-md-2">Email</label>
+                                <input data-ng-model="vm.employee.Email" placeholder="Email" data-ng-required="true" data-email-unique="{{vm.douniqueEmailValidation}}" type="email" name="email" /><span ng-if="empForm.email.$pending">Please Wait . . .</span>
+                                <div class="messages" ng-messages="empForm.email.$error" ng-if="empForm.email.$touched || empForm.$submitted">
+                                    <div class="errorMessage" ng-message="required">Email is required.</div>
+                                    <div class="errorMessage" ng-message="email">Invalid Email.</div>
+                                    <div class="errorMessage" ng-message="isemailunique">Email already exists.</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-md-2">Designation</label>
+                                <select data-ng-options="designation.Id as designation.Name for designation in vm.designations"
+                                        data-ng-model="vm.employee.DesignationId" data-ng-required="true" name="cboDesignations">
+                                    <option value="">--Select--</option>
+                                </select>
+                                <div class="messages" ng-messages="empForm.cboDesignations.$error" ng-if="empForm.cboDesignations.$touched || empForm.$submitted">
+                                    <div class="errorMessage" ng-message="required">Designation is required.</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-md-2">Salary</label>
+                                <input data-ng-model="vm.employee.Salary" placeholder="Salary" data-ng-required="true" type="number" name="Salary" />
+                                <div class="messages" ng-messages="empForm.Salary.$error" ng-if="empForm.Salary.$touched || empForm.$submitted">
+                                    <div class="errorMessage" ng-message="required">Salary is required.</div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label class="col-md-2">Date of Birth</label>
+                                <input type="text" name="birthdate" data-ng-model="vm.employee.DateOfBirth" data-ng-required="true" datepicker-popup="dd-MM-yy" is-open="vm.opened" datepicker-options="vm.dateOptions" />
+                            </div>
+
+                            <div class="span2">
+                                Gender:
+                            </div>
+                            <div class="span10">
+                                <label class="radio">
+                                    <input type="radio" name="gender" value="Male"
+                                           data-ng-checked="vm.employee.Gender == 'Male'"
+                                           data-ng-model="vm.employee.Gender" />
+                                    Male
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="gender" value="Female"
+                                           data-ng-checked="vm.employee.Gender == 'Female'"
+                                           data-ng-model="vm.employee.Gender" />
+                                    Female
+                                    <br />
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</section>

@@ -1,0 +1,4 @@
+D:\Projects\GitHub\asp.net-mvc-angular-skeleton\Web\WebApi.OutputCache.Core\bin\Release\WebApi.OutputCache.Core.dll
+D:\Projects\GitHub\asp.net-mvc-angular-skeleton\Web\WebApi.OutputCache.Core\bin\Release\WebApi.OutputCache.Core.pdb
+D:\Projects\GitHub\asp.net-mvc-angular-skeleton\Web\WebApi.OutputCache.Core\obj\Release\WebApi.OutputCache.Core.dll
+D:\Projects\GitHub\asp.net-mvc-angular-skeleton\Web\WebApi.OutputCache.Core\obj\Release\WebApi.OutputCache.Core.pdb

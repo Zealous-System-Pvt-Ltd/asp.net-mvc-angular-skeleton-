@@ -1,0 +1,9 @@
+C:\Users\ruchir.shah\Documents\Downloads\Demo\Demo\Web\WebApi.OutputCache.Core\bin\Debug\WebApi.OutputCache.Core.dll
+C:\Users\ruchir.shah\Documents\Downloads\Demo\Demo\Web\WebApi.OutputCache.Core\bin\Debug\WebApi.OutputCache.Core.pdb
+C:\Users\ruchir.shah\Documents\Downloads\Demo\Demo\Web\WebApi.OutputCache.Core\obj\Debug\WebApi.OutputCache.Core.dll
+C:\Users\ruchir.shah\Documents\Downloads\Demo\Demo\Web\WebApi.OutputCache.Core\obj\Debug\WebApi.OutputCache.Core.pdb
+C:\Users\ruchir.shah\Documents\Downloads\Demo\Demo\Web\WebApi.OutputCache.Core\obj\Debug\WebApi.OutputCache.Core.csprojResolveAssemblyReference.cache
+D:\Projects\GitHub\asp.net-mvc-angular-skeleton\Web\WebApi.OutputCache.Core\bin\Debug\WebApi.OutputCache.Core.dll
+D:\Projects\GitHub\asp.net-mvc-angular-skeleton\Web\WebApi.OutputCache.Core\bin\Debug\WebApi.OutputCache.Core.pdb
+D:\Projects\GitHub\asp.net-mvc-angular-skeleton\Web\WebApi.OutputCache.Core\obj\Debug\WebApi.OutputCache.Core.dll
+D:\Projects\GitHub\asp.net-mvc-angular-skeleton\Web\WebApi.OutputCache.Core\obj\Debug\WebApi.OutputCache.Core.pdb
